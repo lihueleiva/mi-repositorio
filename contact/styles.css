@@ -84,7 +84,6 @@ header img.logo {
   padding: 0.2rem 1rem;
 }
 
-
 section {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
@@ -227,3 +226,4 @@ footer .social-icons a:hover {
   .banner img {
     width: 100%;
   }
+}

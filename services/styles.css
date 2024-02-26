@@ -196,55 +196,50 @@ footer .social-icons a:hover {
     padding: 10px 20px;
     z-index: 1000;
     margin-top: 10px;
-  
-}
-    
+  }
+
   .navbar-nav.show {
-      display: flex;
-}
-  
-   .navbar-toggler {
-      display: block;
-      position: relative;
-      cursor: pointer;
-}
-  
+    display: flex;
+  }
+
+  .navbar-toggler {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
   .navbar-toggler .icon-bar {
-      background-color: #343a40;
-      height: 2px;
-      width: 20px;
-      display: block;
-      position: absolute;
-      top: 8px;
-}
+    background-color: #343a40;
+    height: 2px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 8px;
+  }
 
-.principal-products {
+  .principal-products {
+    padding: 10px;
+  }
 
-  padding: 10px;
-}
-
-
-.product-box {
-  width: calc(50% - 20px);
-  padding: 10px;
-}
+  .product-box {
+    width: calc(50% - 20px);
+    padding: 10px;
+  }
 
   .parrafo1 {
-        font-size: 0.8rem;
-        
-}
+    font-size: 0.8rem;
+  }
 
-
-
-    @media (max-width: 768px) {
-        .product-box {
-          flex: 1 1 100%;
-        }
-        .principal-products {
-          padding: 10px;
-        }
-        .parrafo1 {
-          font-size: 0.7rem;
-          margin: 10px;
-      }
+  @media (max-width: 768px) {
+    .product-box {
+      flex: 1 1 100%;
     }
+    .principal-products {
+      padding: 10px;
+    }
+    .parrafo1 {
+      font-size: 0.7rem;
+      margin: 10px;
+    }
+  }
+}
