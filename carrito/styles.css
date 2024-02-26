@@ -84,91 +84,91 @@ header img.logo {
 }
 
 .principal-products {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 2px solid #ddd;
-    padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  footer a:hover {
-    color: rgb(109, 149, 16);
-  }
-  
-  footer .social-icons {
-    margin-top: 15px;
-  }
-  
-  footer .social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 20px;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  
-  footer .social-icons a:hover {
-    color: rgb(109, 149, 16);
-  }
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: rgb(109, 149, 16);
+}
+
+footer .social-icons {
+  margin-top: 15px;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: rgb(109, 149, 16);
+}
 
 @media (max-width: 992px) {
-    .navbar-nav {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      top: 80px;
-      left: 0;
-      width: 100%;
-      background-color: #f8f9fa;
-      padding: 10px 20px;
-      z-index: 1000;
-      margin-top: 10px;
-    }
-  
-    .navbar-nav.show {
-      display: flex;
-    }
-  
-    .navbar-toggler {
-      display: block;
-      position: relative;
-      cursor: pointer;
-    }
-  
-    .navbar-toggler .icon-bar {
-      background-color: #343a40;
-      height: 2px;
-      width: 20px;
-      display: block;
-      position: absolute;
-      top: 8px;
-    }
-    .search-box {
-      margin: 0px;
-    }
-    .banner img {
-      width: 100%;
-    }
-  
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    z-index: 1000;
+    margin-top: 10px;
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  .navbar-toggler {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .navbar-toggler .icon-bar {
+    background-color: #343a40;
+    height: 2px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 8px;
+  }
+  .search-box {
+    margin: 0px;
+  }
+  .banner img {
+    width: 100%;
+  }
+}
