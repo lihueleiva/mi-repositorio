@@ -28,7 +28,6 @@ header {
   position: relative;
   z-index: 1;
 }
-
 header img.logo {
   width: auto;
   max-height: 150px;
@@ -39,29 +38,24 @@ header img.logo {
   position: relative;
   z-index: 1000;
 }
-
 .navbar-toggler {
   display: none;
 }
-
 .navbar-brand {
   display: flex;
   align-items: center;
 }
-
 .navbar img.logo {
   height: auto;
   margin-right: 10px;
 }
-
 .navbar-nav {
   display: flex;
   gap: 20px;
 }
-
 .navbar-nav a {
   text-decoration: none;
-  color: #343a40;
+  color: #333;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -103,23 +97,19 @@ header img.logo {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s, transform 0.3s;
 }
-
 .product-box:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
-
 .product-box img {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
 }
-
 .product-box p {
   margin: 10px 0;
   font-size: 14px;
 }
-
 .product-box a {
   display: block;
   color: rgb(109, 149, 16);
@@ -128,9 +118,8 @@ header img.logo {
   font-size: 16px;
   transition: color 0.3s;
 }
-
 .product-box a:hover {
-  color: #555;
+  color: #333;
 }
 
 .contact-us {
@@ -143,14 +132,12 @@ form {
   max-width: 600px;
   margin: 0 auto;
 }
-
 form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   color: #333;
 }
-
 form input,
 form textarea {
   width: 100%;
@@ -160,7 +147,6 @@ form textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-
 form button {
   background-color: rgb(109, 149, 16);
   color: #fff;
@@ -171,9 +157,8 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 form button:hover {
-  background-color: #555;
+  background-color: #333;
 }
 
 footer {
@@ -182,22 +167,18 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 footer a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-
 footer a:hover {
   color: rgb(109, 149, 16);
 }
-
 footer .social-icons {
   margin-top: 15px;
 }
-
 footer .social-icons a {
   display: inline-block;
 }
@@ -215,17 +196,14 @@ footer .social-icons a {
     z-index: 1000;
     margin-top: 10px;
   }
-
   .navbar-nav.show {
     display: flex;
   }
-
   .navbar-toggler {
     display: block;
     position: relative;
     cursor: pointer;
   }
-
   .navbar-toggler .icon-bar {
     background-color: #343a40;
     height: 2px;
@@ -234,33 +212,26 @@ footer .social-icons a {
     position: absolute;
     top: 8px;
   }
-
   .search-box {
-    margin: 0px;
+    margin: 0;
   }
-
   .product-box {
     flex: 1 1 calc(50% - 20px);
   }
-
   .banner img {
     width: 100%;
   }
-
   .contact-us {
     padding: 20px;
   }
 }
-
 @media (max-width: 768px) {
   .product-box {
     flex: 1 1 100%;
   }
-
   .banner img {
     height: auto;
   }
-
   .contact-us {
     font-size: 14px;
   }
