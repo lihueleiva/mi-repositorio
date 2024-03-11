@@ -24,12 +24,14 @@ img {
   position: relative;
   z-index: 2;
 }
+.banner img {
+  width: 100%;
+}
 
 header {
   position: relative;
   z-index: 1;
 }
-
 header img.logo {
   width: auto;
   max-height: 150px;
@@ -40,26 +42,21 @@ header img.logo {
   position: relative;
   z-index: 1000;
 }
-
 .navbar-toggler {
   display: none;
 }
-
 .navbar-brand {
   display: flex;
   align-items: center;
 }
-
-.navbar img.logo {
+.navbar-brand img.logo {
   height: auto;
   margin-right: 10px;
 }
-
 .navbar-nav {
   display: flex;
   gap: 20px;
 }
-
 .navbar-nav a {
   text-decoration: none;
   color: #343a40;
@@ -69,37 +66,16 @@ header img.logo {
 .navbar-nav a:hover {
   color: rgb(109, 149, 16);
 }
-
-.search-box {
+.navbar-search-box {
   display: flex;
   align-items: center;
 }
-
-.form-control {
+.navbar-search-box .form-control {
   height: 40px;
 }
-
-.btn-search {
+.navbar-search-box .btn-search {
   height: 40px;
   padding: 0.2rem 1rem;
-}
-
-section {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
-
-.principal-products {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-bottom: 2px solid #ddd;
-  padding: 10px;
 }
 
 section.contact-us {
@@ -107,27 +83,23 @@ section.contact-us {
   padding: 40px 20px;
   text-align: center;
 }
-
 section.contact-us h2 {
-  color: #333;
+  color: #343a40;
   font-size: 2rem;
   margin-bottom: 20px;
 }
-
-form {
+section.contact-us form {
   max-width: 600px;
   margin: 0 auto;
 }
-
-form label {
+section.contact-us form label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #333;
+  color: #343a40;
 }
-
-form input,
-form textarea {
+section.contact-us form input,
+section.contact-us form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -135,8 +107,7 @@ form textarea {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-
-form button {
+section.contact-us form button {
   background-color: rgb(109, 149, 16);
   color: #fff;
   padding: 12px 20px;
@@ -146,9 +117,8 @@ form button {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
-form button:hover {
-  background-color: #555;
+section.contact-us form button:hover {
+  background-color: #343a40;
 }
 
 footer {
@@ -157,27 +127,22 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 footer p {
   margin: 0;
   font-size: 14px;
 }
-
 footer a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-
 footer a:hover {
   color: rgb(109, 149, 16);
 }
-
 footer .social-icons {
   margin-top: 15px;
 }
-
 footer .social-icons a {
   display: inline-block;
   margin: 0 10px;
@@ -185,7 +150,6 @@ footer .social-icons a {
   color: #fff;
   transition: color 0.3s;
 }
-
 footer .social-icons a:hover {
   color: rgb(109, 149, 16);
 }
@@ -203,17 +167,14 @@ footer .social-icons a:hover {
     z-index: 1000;
     margin-top: 10px;
   }
-
   .navbar-nav.show {
     display: flex;
   }
-
   .navbar-toggler {
     display: block;
     position: relative;
     cursor: pointer;
   }
-
   .navbar-toggler .icon-bar {
     background-color: #343a40;
     height: 2px;
@@ -221,9 +182,5 @@ footer .social-icons a:hover {
     display: block;
     position: absolute;
     top: 8px;
-  }
-
-  .banner img {
-    width: 100%;
   }
 }
