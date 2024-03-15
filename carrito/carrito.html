@@ -17,179 +17,188 @@
     <title>Carrito de Compras</title>
   </head>
   <body>
-    <header class="header-container">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../images/sublicop-header.png"
-              class="logo"
-              alt="header logolicup"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="../index.html"
-                  >Menu</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../products/products.html"
-                  >Productos</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../contact/contact.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../services/services.html"
-                  >Servicios</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex search-box" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search"
+    <div class="container-fluid container-horizontal-scroll">
+      <header class="header-container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+              <img
+                src="../images/sublicop-header.png"
+                class="logo"
+                alt="header logolicup"
               />
-              <button class="btn btn-outline-success btn-search" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Menu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../products/products.html"
+                    >Productos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../contact/contact.html"
+                    >Contacto</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../services/services.html"
+                    >Servicios</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex search-box" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success btn-search"
+                  type="submit"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
           </div>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <div class="banner">
+            <img src="../images/carrusel-1 (2).png" alt="banner logo" />
+          </div>
+        </section>
+        <h1 class="principal-products">Carrito de Compras</h1>
+        <section class="contact-us">
+          <form action="#" method="post" id="cart-form">
+            <label for="product-name">Nombre del Producto:</label>
+            <input
+              type="text"
+              id="product-name"
+              name="product-name"
+              list="products-list"
+              required
+            />
+
+            <datalist id="products-list">
+              <option value="Producto 1"></option>
+              <option value="Producto 2"></option>
+              <option value="Producto 3"></option>
+            </datalist>
+
+            <label for="quantity">Cantidad:</label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              required
+            />
+
+            <label for="shipping-address">Dirección de Envío:</label>
+            <input
+              type="text"
+              id="shipping-address"
+              name="shipping-address"
+              required
+            />
+
+            <label for="payment-method">Método de Pago:</label>
+            <select id="payment-method" name="payment-method" required>
+              <option value="" disabled selected>
+                Seleccionar método de pago
+              </option>
+              <option value="credit-card">Tarjeta de Crédito</option>
+              <option value="debit-card">Tarjeta de Débito</option>
+              <option value="paypal">PayPal</option>
+              <option value="cash">Efectivo</option>
+            </select>
+
+            <button type="button" id="submitBtn">Agregar al Carrito</button>
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Sublicup. Todos los derechos reservados.</p>
+        <p>
+          <a href="pages/privacidad.html">Política de privacidad</a> |
+          <a href="pages/terminos.html">Términos y condiciones</a>
+        </p>
+        <div class="social-icons">
+          <a href="#" target="_blank" title="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" target="_blank" title="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/sublicup.mdz?igsh=MWY5a3QwcWZ0eHR2Nw=="
+            target="_blank"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank" title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="banner">
-          <img src="../images/carrusel-1 (2).png" alt="banner logo" />
+      </footer>
+
+      <div class="modal" id="successModal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Operación Exitosa</h2>
+          <p>¡Tu operación se ha completado con éxito!</p>
         </div>
-      </section>
-      <h1 class="principal-products">Carrito de Compras</h1>
-      <section class="contact-us">
-        <form action="#" method="post" id="cart-form">
-          <label for="product-name">Nombre del Producto:</label>
-          <input
-            type="text"
-            id="product-name"
-            name="product-name"
-            list="products-list"
-            required
-          />
-
-          <datalist id="products-list">
-            <option value="Producto 1"></option>
-            <option value="Producto 2"></option>
-            <option value="Producto 3"></option>
-          </datalist>
-
-          <label for="quantity">Cantidad:</label>
-          <input type="number" id="quantity" name="quantity" min="1" required />
-
-          <label for="shipping-address">Dirección de Envío:</label>
-          <input
-            type="text"
-            id="shipping-address"
-            name="shipping-address"
-            required
-          />
-
-          <label for="payment-method">Método de Pago:</label>
-          <select id="payment-method" name="payment-method" required>
-            <option value="" disabled selected>
-              Seleccionar método de pago
-            </option>
-            <option value="credit-card">Tarjeta de Crédito</option>
-            <option value="debit-card">Tarjeta de Débito</option>
-            <option value="paypal">PayPal</option>
-            <option value="cash">Efectivo</option>
-          </select>
-
-          <button type="button" id="submitBtn">Agregar al Carrito</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Sublicup. Todos los derechos reservados.</p>
-      <p>
-        <a href="pages/privacidad.html">Política de privacidad</a> |
-        <a href="pages/terminos.html">Términos y condiciones</a>
-      </p>
-      <div class="social-icons">
-        <a href="#" target="_blank" title="Facebook"
-          ><i class="fab fa-facebook"></i
-        ></a>
-        <a href="#" target="_blank" title="Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/sublicup.mdz?igsh=MWY5a3QwcWZ0eHR2Nw=="
-          target="_blank"
-          title="Instagram"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="#" target="_blank" title="LinkedIn"
-          ><i class="fab fa-linkedin"></i
-        ></a>
       </div>
-    </footer>
 
-    <div class="modal" id="successModal">
-      <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <h2>Operación Exitosa</h2>
-        <p>¡Tu operación se ha completado con éxito!</p>
-      </div>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      document
-        .getElementById("submitBtn")
-        .addEventListener("click", function () {
-          document.getElementById("successModal").style.display = "block";
-        });
-    </script>
-    <script>
-      // Función para cerrar el modal
-      function closeModal() {
-        document.getElementById("successModal").style.display = "none";
-      }
-
-      // Agregar evento de clic al botón de cierre
-      document
-        .querySelector(".close-btn")
-        .addEventListener("click", closeModal);
-
-      // Cerrar el modal si el usuario hace clic fuera del área del modal
-      window.onclick = function (event) {
-        var modal = document.getElementById("successModal");
-        if (event.target == modal) {
-          closeModal();
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        document
+          .getElementById("submitBtn")
+          .addEventListener("click", function () {
+            document.getElementById("successModal").style.display = "block";
+            document.getElementById("cart-form").reset();
+          });
+      </script>
+      <script>
+        function closeModal() {
+          document.getElementById("successModal").style.display = "none";
         }
-      };
-    </script>
+        document
+          .querySelector(".close-btn")
+          .addEventListener("click", closeModal);
+        window.onclick = function (event) {
+          var modal = document.getElementById("successModal");
+          if (event.target == modal) {
+            closeModal();
+          }
+        };
+      </script>
+    </div>
   </body>
 </html>
